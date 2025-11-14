@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='booking_form.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Complete Your Booking</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="{{ name }}" readonly class="readonly">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="{{ email }}" readonly class="readonly">
+
+            <label for="service">Service:</label>
+            <input type="text" id="service" name="service" value="{{ service }}" readonly class="readonly">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" value="{{ date }}" readonly class="readonly">
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" value="{{ time }}" readonly class="readonly">
+        </form>
+        <p>If any information is incorrect, please go back and re-enter your details.</p>
+    </div>
+</body>
+</html>
